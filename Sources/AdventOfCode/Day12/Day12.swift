@@ -4,7 +4,7 @@
 // https://adventofcode.com/YEAR/day/12
 //
 
-struct Day12 {
+class Day12 {
     let day = String("\(Self.self)".suffix(2))
 
     let testData = [ "", "", "" ]
