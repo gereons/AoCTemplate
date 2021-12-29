@@ -1,6 +1,6 @@
 #!/bin/sh
 
-YEAR=2015
+YR=YEAR
 DAY=$1
 
 if [ -z "$DAY" ]; then
@@ -13,12 +13,12 @@ D2=$(printf "%02d" $DAY)
 
 TMP=.input.$$.tmp
 
-curl -s https://adventofcode.com/$YEAR/day/$DAY/input --cookie "session=$AOC_SESSION" >$TMP
+curl -s https://adventofcode.com/$YR/day/$DAY/input --cookie "session=$AOC_SESSION" >$TMP
 
 (
 cat <<END
 //
-// Advent of Code $YEAR - input for day $D2
+// Advent of Code $YR - input for day $D2
 //
 
 extension Day$D2 {
