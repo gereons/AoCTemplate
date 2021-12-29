@@ -4,9 +4,7 @@
 // https://adventofcode.com/YEAR/day/11
 //
 
-class Day11 {
-    let day = String("\(Self.self)".suffix(2))
-
+final class Day11: Day {
     let testData = [ "", "", "" ]
 
     func run() {
