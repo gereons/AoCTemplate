@@ -4,12 +4,15 @@
 // https://adventofcode.com/YEAR/day/17
 //
 
-final class Day17: Day {
-    let testData = [ "", "", "" ]
+import AoCTools
+
+final class Day17: Day, EmptyInput {
+    let input: String
+    init(input: String? = nil) {
+        self.input = input ?? Self.input
+    }
 
     func run() {
-        // let data = testData
-
         Timer.time(day) {
             // parse data here
         }
@@ -18,12 +21,12 @@ final class Day17: Day {
         print("Solution for part 2: \(part2())")
     }
 
-    private func part1() -> Int {
+    func part1() -> Int {
         let timer = Timer(day); defer { timer.show() }
         return 0
     }
 
-    private func part2() -> Int {
+    func part2() -> Int {
         let timer = Timer(day); defer { timer.show() }
         return 0
     }

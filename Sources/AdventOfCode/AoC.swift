@@ -2,6 +2,8 @@
 // Advent of Code YEAR
 //
 
+import AoCTools
+
 @main
 struct AdventOfCode {
     static func main() {
@@ -32,4 +34,12 @@ struct AdventOfCode {
         Day25().run()
         Timer.showTotal()
     }
+}
+
+protocol EmptyInput {
+    static var input: String { get }
+}
+
+extension EmptyInput {
+    static var input: String { "" }
 }
