@@ -22,13 +22,13 @@ cat <<END
 //
 
 extension Day$D2 {
-static let input = """
+static let rawInput = #"""
 END
 
 cat $TMP
 
 cat <<END
-"""
+"""#
 }
 END
 ) >Sources/AdventOfCode/Day$D2/Day$D2+input.swift

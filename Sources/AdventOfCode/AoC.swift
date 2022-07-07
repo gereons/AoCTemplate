@@ -35,11 +35,3 @@ struct AdventOfCode {
         Timer.showTotal()
     }
 }
-
-protocol EmptyInput {
-    static var input: String { get }
-}
-
-extension EmptyInput {
-    static var input: String { "" }
-}
