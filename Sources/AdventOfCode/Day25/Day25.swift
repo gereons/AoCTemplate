@@ -16,7 +16,5 @@ final class Day25: AOCDay {
         return 0
     }
 
-    func part2() -> Int {
-        return 0
-    }
+    func part2() {}
 }

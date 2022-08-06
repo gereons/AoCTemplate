@@ -20,3 +20,7 @@ final class Day01: AOCDay {
         return 0
     }
 }
+
+extension Day01 {
+    static var rawInput: String { "foo" }
+}
