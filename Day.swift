@@ -1,15 +1,15 @@
 //
-// Advent of Code YEAR
+// Advent of Code {YEAR} Day {DAY1}
 //
-// https://adventofcode.com/YEAR/day/10
+// https://adventofcode.com/{YEAR}/day/{DAY1}
 //
 
 import AoCTools
 
-final class Day10: AOCDay {
-    let input: String
+final class Day{DAY}: AOCDay {
+    
     init(rawInput: String? = nil) {
-        self.input = rawInput ?? Self.rawInput
+        // let input = rawInput ?? Self.rawInput
     }
 
     func part1() -> Int {
