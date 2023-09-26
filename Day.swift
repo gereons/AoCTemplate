@@ -8,8 +8,8 @@ import AoCTools
 
 final class Day{DAY}: AOCDay {
     
-    init(rawInput: String? = nil) {
-        // let input = rawInput ?? Self.rawInput
+    init(input: String?) {
+        // let input = input ?? Self.input
     }
 
     func part1() -> Int {
