@@ -9,7 +9,7 @@ All code for all days is compiled into a single macOS commandline binary, which 
 Each day has at least 3 associated source files: 
 
 * `DayX.swift` for the solution code
-* `DayX+Input.swift` for the puzzle input. This file is created by running the included `input.sh` script
+* `DayX+Input.swift` for the puzzle input. This file is created by running the `input.sh` script (see below) but is not included in this repo for [legal reasons](https://www.reddit.com/r/adventofcode/wiki/faqs/copyright/inputs).
 * `DayXTests.swift` for the test suite, if the puzzle has test cases
 
 `AoC.swift` has the `main()` function which simply runs one (or all) of the puzzles.
@@ -30,32 +30,8 @@ To run the puzzle for a specific day without changing `AoC.swift`, use `swift ru
 
 To run tests, use `swift test` for all tests, or e.g. `swift test --filter AoCTests.Day02Tests` to run the tests for day 2.
 
+### Puzzle Inputs
+
+Use the included `input.sh` script to download your puzzle input. To be able to run this script, [grab the session cookie](https://www.reddit.com/r/adventofcode/comments/a2vonl/how_to_download_inputs_with_a_script/) from [adventofcode.com](https://adventofcode.com) and create a `.aoc-session` file with the contents. `input.sh` downloads the input for the current day by default, use `input.sh X` to download day X's input.
+
 <!--- advent_readme_stars table --->
-
-### Time Log
-
-* Day1
-* Day2
-* Day3
-* Day4
-* Day5
-* Day6
-* Day7
-* Day8
-* Day9
-* Day10
-* Day11
-* Day12
-* Day13
-* Day14
-* Day15
-* Day16
-* Day17
-* Day18
-* Day19
-* Day20
-* Day21
-* Day22
-* Day23
-* Day24
-* Day25

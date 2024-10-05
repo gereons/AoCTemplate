@@ -2,30 +2,35 @@
 // Advent of Code {YEAR} Day {DAY1} Tests
 //
 
-import XCTest
+import Testing
 @testable import AdventOfCode
 
-final class Day{DAY}Tests: XCTestCase {
-    let testInput = """
+fileprivate let testInput = """
 """
 
-    func testDay{DAY}_part1() throws {
+@Suite("Day {DAY1} Tests") 
+struct Day{DAY}Tests {
+    @MainActor @Test("Day {DAY1} Part 1")
+    func testDay{DAY}_part1() {
         let day = Day{DAY}(input: testInput)
-        XCTAssertEqual(day.part1(), 0)
+        #expect(day.part1() == 0)
     }
 
-    func testDay{DAY}_part1_solution() throws {
+    @MainActor @Test("Day {DAY1} Part 1 Solution")
+    func testDay{DAY}_part1_solution() {
         let day = Day{DAY}(input: Day{DAY}.input)
-        XCTAssertEqual(day.part1(), 0)
+        #expect(day.part1() == 0)
     }
 
-    func testDay{DAY}_part2() throws {
+    @MainActor @Test("Day {DAY1} Part 2")
+    func testDay{DAY}_part2() {
         let day = Day{DAY}(input: testInput)
-        XCTAssertEqual(day.part2(), 0)
+        #expect(day.part2() == 0)
     }
 
-    func testDay{DAY}_part2_solution() throws {
+    @MainActor @Test("Day {DAY1} Part 2 Solution")
+    func testDay{DAY}_part2_solution() {
         let day = Day{DAY}(input: Day{DAY}.input)
-        XCTAssertEqual(day.part2(), 0)
+        #expect(day.part2() == 0)
     }
 }

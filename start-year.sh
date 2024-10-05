@@ -19,7 +19,7 @@ mkdir "$DIR"
 mkdir "$DIR/Sources"
 mkdir "$DIR/Tests"
 
-for file in LICENSE.md Package.resolved Package.swift README.md input.sh run .gitignore .github; do
+for file in LICENSE.md Package.resolved Package.swift README.md input.sh run test .gitignore .github; do
     cp -r $file "$DIR"
 done
 
