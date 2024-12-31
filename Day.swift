@@ -6,17 +6,17 @@
 
 import AoCTools
 
-final class Day{DAY}: AOCDay {
+final class Day{DAY}: AdventOfCodeDay {
     let title = "Day {DAY1}"
     
     init(input: String) {
     }
 
-    func part1() -> Int {
+    func part1() async -> Int {
         0
     }
 
-    func part2() -> Int {
+    func part2() async -> Int {
         0
     }
 }

@@ -17,17 +17,19 @@ fi
 
 mkdir "$DIR"
 mkdir "$DIR/Sources"
+mkdir "$DIR/Sources/Inputs"
 mkdir "$DIR/Tests"
 
-for file in LICENSE.md Package.swift README.md input.sh run test .gitignore .github; do
+for file in LICENSE.md Package.swift README.md input.sh run test .gitignore .github .swiftlint.yml; do
     cp -r $file "$DIR"
 done
 
 cp AoC.swift "$DIR/Sources"
+touch "$DIR/Sources/Inputs/.gitkeep"
+cp Tag.swift "$DIR/Tests"
 
 for day in $(seq -w 1 25); do
-    mkdir "$DIR/Sources/Day$day"
-    cp Day.swift "$DIR/Sources/Day$day/Day$day.swift"
+    cp Day.swift "$DIR/Sources/Day$day.swift"
     cp Tests.swift "$DIR/Tests/Day${day}Tests.swift"
     (cd $DIR; perl -i -pe "s/{DAY}/$day/g" $(grep -rl "{DAY}"))
     (cd $DIR; DAY1=$(expr $day + 0); perl -i -pe "s/{DAY1}/$DAY1/g" $(grep -rl "{DAY1}"))

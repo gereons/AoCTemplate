@@ -9,16 +9,22 @@ let package = Package(
         .macOS(.v15)
     ],
     dependencies: [
-        .package(url: "https://github.com/gereons/AoCTools", from: "0.1.0")
+        .package(url: "https://github.com/lukepistrol/SwiftLintPlugin", from: "0.55.1"),
+        .package(url: "https://github.com/gereons/AoCTools", from: "0.1.7")
     ],
     targets: [
         .executableTarget(
             name: "AdventOfCode",
             dependencies: [ "AoCTools" ],
-            path: "Sources"),
+            path: "Sources",
+            plugins: [
+                .plugin(name: "SwiftLint", package: "SwiftLintPlugin")
+            ]
+        ),
         .testTarget(
             name: "AoCTests",
             dependencies: [ "AdventOfCode", "AoCTools" ],
-            path: "Tests")
+            path: "Tests"
+        )
     ]
 )
