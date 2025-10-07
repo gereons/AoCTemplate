@@ -14,7 +14,7 @@ Each day usually has 3 associated source files:
 
 `AoC.swift` has the `main()` function which runs one (or all) of the puzzles, then prints the solution(s) and the elapsed time.
 
-The code relies on my own [AoCTools](https://github.com/gereons/AoCTools) package where I started collecting utility functions for things frequently used in AoC, such as 2D and 3D points, [hexagonal grids](https://www.redblobgames.com/grids/hexagons/), an [A\* pathfinder](https://en.wikipedia.org/wiki/A*_search_algorithm) and more.
+The code relies on my own [AoCTools](https://codeberg.org/gereon/AoCTools) package where I started collecting utility functions for things frequently used in AoC, such as 2D and 3D points, [hexagonal grids](https://www.redblobgames.com/grids/hexagons/), an [A\* pathfinder](https://en.wikipedia.org/wiki/A*_search_algorithm) and more.
 
 ### Xcode
 

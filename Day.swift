@@ -8,7 +8,7 @@ import AoCTools
 
 final class Day{DAY}: AdventOfCodeDay {
     let title = "Day {DAY1}"
-    
+
     init(input: String) {
     }
 

@@ -20,7 +20,7 @@ mkdir "$DIR/Sources"
 mkdir "$DIR/Sources/Inputs"
 mkdir "$DIR/Tests"
 
-for file in LICENSE.md Package.swift README.md input.sh run test .gitignore .github .swiftlint.yml; do
+for file in LICENSE.md Package.swift README.md input.sh run test .gitignore .swiftlint.yml; do
     cp -r $file "$DIR"
 done
 
